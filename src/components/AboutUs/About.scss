@@ -1,0 +1,55 @@
+@import "../../app.scss";
+.about{
+
+    background: linear-gradient(180deg,#0c0c1d,#111132);
+    padding-left: 20px;
+    padding-right: 20px;
+
+  .container{
+    max-width: 1440px;
+    margin: 0 auto;
+    .heading{
+      text-align: center;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      .about_heading{
+       font-size: 72px;
+        color: lightgray;
+        letter-spacing: 10px;
+          @include tablet{
+              font-size: 36px;
+          }
+        span:hover{
+          color: orange;
+          cursor: pointer;
+        }
+      }
+  }
+
+  .button_container{
+    padding-left: 20px;
+    padding-right: 20px;
+      text-align: center;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+
+
+      button{
+          padding: 20px;
+          font-size: 15px;
+          cursor: pointer;
+
+          @include mobile{
+             padding: 13px;
+             font-size: 10px;
+          }
+      }
+  }
+  }
+
+    
+}

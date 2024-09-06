@@ -1,0 +1,70 @@
+@import "../../app.scss";
+
+.progress-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    z-index: 1000;
+  
+    .progress-bar {
+      height: 100%;
+      background: orange;
+      width: 0;
+      transition: width 0.2s;
+    }
+  }
+  
+  // Skills Section Styles
+  .skills-section {
+    padding: 50px;
+    // background-color: #f7f7f7;
+    height: 70vh;
+ 
+    text-align: center;
+    @include desktop{
+      height: auto;
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  
+      .skill-card {
+        background: rebeccapurple;
+        border-radius: 8px;
+        padding: 30px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+  
+        &:hover {
+          transform: translateY(-5px);
+        }
+  
+        i {
+          font-size: 40px;
+        //   color: #f06529; // Adjust color based on skill
+        color: lightcyan;
+          margin-bottom: 10px;
+        }
+  
+        .progress-bar {
+          background: #e0e0e0;
+          border-radius: 5px;
+          margin-top: 10px;
+          height: 10px;
+  
+          .progress {
+            background: orange;
+            height: 100%;
+            border-radius: 5px;
+            transition: all 0.3s ease-in;
+          }
+        }
+      }
+    }
+  }
