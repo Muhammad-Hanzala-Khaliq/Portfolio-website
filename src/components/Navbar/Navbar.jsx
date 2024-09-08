@@ -63,7 +63,10 @@ const Navbar = () => {
                   style={{ color: "#C13584", width: "25px", height: "25px" }}
                 />
               </a>
-              <a href="">
+              <a
+                href="https://www.upwork.com/freelancers/~01164acd98cb58d10a"
+                target="blank"
+              >
                 <FaSquareUpwork
                   style={{ color: "#6fda44", width: "25px", height: "25px" }}
                 />
